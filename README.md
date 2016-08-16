@@ -1,3 +1,37 @@
+//////////////////////////
+//Stop Refreshing :
+//////////////////////////
+mPullToRefreshLayout.IsRefreshing = false;
+
+//////////////////////////
+//Setup :
+//////////////////////////
+
+// Now find the PullToRefreshLayout to setup
+mPullToRefreshLayout = (PullToRefreshLayout) view.findViewById(R.id.ptr_layout);
+
+// Now setup the PullToRefreshLayout
+ActionBarPullToRefresh.from(getActivity())
+        // Mark All Children as pullable
+        .allChildrenArePullable()
+        // Set a OnRefreshListener
+        .listener(this)
+        // Finally commit the setup to our PullToRefreshLayout
+        .setup(mPullToRefreshLayout);
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------
+
+
+
+
 # PLEASE NOTE, THIS PROJECT IS NO LONGER BEING MAINTAINED
 
 * * *
